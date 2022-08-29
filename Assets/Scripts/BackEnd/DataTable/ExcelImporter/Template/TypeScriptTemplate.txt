@@ -1,0 +1,24 @@
+"use strict";
+
+import {EnumList} from "./EnumListTbl";
+
+export class $ExcelTable$
+{
+	$Types$
+}
+
+export class $ExcelDataParser$
+{
+    public static mapping(data : any[] ) {
+		const dataMap : Map<number, $ExcelTable$> = new Map<number, $ExcelTable$>();
+
+        for (let i = 0; i < data.length; i++) {
+            const p: $ExcelTable$ = new $ExcelTable$();
+			$EXPORT_DATA$
+
+            dataMap.set(p.id, p);
+        }
+
+		return dataMap;
+    }
+}

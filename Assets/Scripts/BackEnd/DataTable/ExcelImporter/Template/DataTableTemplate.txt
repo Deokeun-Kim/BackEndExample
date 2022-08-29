@@ -1,0 +1,21 @@
+/* * * * *
+ *
+ * Auto generated file.
+ * Do not edit manually.
+ *
+ * * * * */
+
+using System.Collections.Generic;
+
+public class $ExcelData$ : ChartTable<$ExcelClass$>
+{   
+    public $ExcelData$()
+    {
+        table = null;
+    }
+
+    public void GetChartTableData(LitJson.JsonData _json)
+    {
+        table = $ExcelClass$_Parser.Parsing(_json);
+    }
+}

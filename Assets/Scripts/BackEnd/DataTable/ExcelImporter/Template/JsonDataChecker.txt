@@ -1,0 +1,37 @@
+/* * * * *
+ *
+ * Auto generated file.
+ * Do not edit manually.
+ *
+ * * * * */
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace JsonDataChecker
+{
+    partial class Checker
+    {
+
+        public Checker(string jsonDataPath)
+        {
+            Load(jsonDataPath);
+        }
+
+        private string jsonFileToString(string jsonDataPath, string jsonFileName)
+        {
+            return File.ReadAllText(jsonDataPath + jsonFileName);
+        }
+
+$Datas$
+
+        private void Load(string jsonDataPath)
+        {
+$Parsing$
+        }
+    }
+}

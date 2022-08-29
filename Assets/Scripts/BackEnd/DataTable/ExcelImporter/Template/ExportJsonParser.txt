@@ -1,0 +1,45 @@
+/* * * * *
+ *
+ * Auto generated file.
+ * Do not edit manually.
+ *
+ * * * * */
+
+using UnityEngine;
+using LitJson;
+using System.IO;
+
+public static class $ExportTemplate$ {
+	public static $ExcelData$ Parsing(JsonData json = null)
+	{
+		$ExcelData$ xlsTbAsset = null;
+		int i = 1;
+		int id = 0;
+		try
+		{
+			xlsTbAsset = new $ExcelData$();
+
+			JsonData node = json;
+
+			for (; i < node.Count; i++)
+			{
+				$ExcelData$.Param p = new $ExcelData$.Param ();
+
+				if(string.IsNullOrEmpty(node[i]["index"].ToString()) == true)
+                    continue;
+
+				$EXPORT_DATA$
+
+				id = p.index;
+				xlsTbAsset.param.Add (p.index, p);
+			}
+		}
+		catch(System.Exception ex)
+		{
+			string error = "$ExcelData$ parsing error.";
+			Debug.LogErrorFormat("{0} <color=red>id : {1}    line : {2}</color>", error, id, i);
+			Debug.LogException(ex);
+		}
+        return xlsTbAsset;
+	}
+}

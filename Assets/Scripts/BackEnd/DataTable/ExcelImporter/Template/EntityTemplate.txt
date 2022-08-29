@@ -1,0 +1,20 @@
+/* * * * *
+ *
+ * Auto generated file.
+ * Do not edit manually.
+ *
+ * * * * */
+
+using System.Collections.Generic;
+
+
+public class $ExcelData$
+{   
+    public Dictionary<int, Param> param = new Dictionary<int, Param> ();
+
+    [System.Serializable]
+    public class Param
+    {
+        $Types$
+    }
+}

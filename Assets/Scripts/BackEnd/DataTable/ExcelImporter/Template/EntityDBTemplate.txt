@@ -1,0 +1,14 @@
+/* * * * *
+ *
+ * Auto generated file.
+ * Do not edit manually.
+ *
+ * * * * */
+
+using System.Collections.Generic;
+
+
+public class $ExcelData$
+{   
+    $Types$
+}

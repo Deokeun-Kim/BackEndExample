@@ -1,0 +1,6 @@
+"use strict";
+
+export module EnumList
+{
+$EnumTypes$
+}
