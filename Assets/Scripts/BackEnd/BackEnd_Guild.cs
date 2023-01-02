@@ -184,7 +184,7 @@ public partial class BackEndManager
 
         // 랜덤 조회 기능 중 기준이 되는 값을 내 길드의 메타데이터로 설정.
         int value = myGuildInfoData.metaDataDic[_metaData];
-        Backend.Guild.GetRandomGuildInfoV3(_metaData, value, gap, indexRandLoadCount, callback =>
+        Backend.RandomInfo.GetRandomData(RandomType.Guild, _metaData, value, gap, indexRandLoadCount, callback =>
         {
             Debug.Log(ShowDebugLog("GetRandGuildListByMetaData", callback));
             List<GuildInfoData> guildDataList = new List<GuildInfoData>();

@@ -150,7 +150,7 @@ public partial class BackEndManager
     /// <param name="_action"></param>
     public void GetRandUserInfo(Action<List<FriendData>> _action = null)
     {
-        Backend.Social.GetRandomUserInfo(10, (callback) =>
+        Backend.RandomInfo.GetRandomDataTableList((callback) =>
         {
             if (callback.IsSuccess() == false)
             {
